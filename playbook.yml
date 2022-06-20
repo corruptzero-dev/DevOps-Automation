@@ -1,0 +1,9 @@
+- name: App tasks
+  gather_facts: false
+  hosts: all
+  tasks:
+    - name: copy file to server
+        copy:
+          src: ./front-user-app
+          dest: 192.168.8.3
+    
